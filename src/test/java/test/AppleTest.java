@@ -20,6 +20,7 @@ public class AppleTest {
 
     @BeforeMethod(alwaysRun = true)
     public void createDriver() {
+        System.setProperty("webdriver.chrome.driver","G:\\webdriver\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
         options.addArguments("--disable-popup-blocking");
