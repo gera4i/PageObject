@@ -23,7 +23,7 @@ public class AppleTest {
         System.setProperty("webdriver.chrome.driver","G:\\webdriver\\chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-notifications");
-        options.addArguments("--allowed-ips");
+        options.addArguments("--whitelisted-ips");
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--window-size=1920,1080");
         driver = new ChromeDriver(options);
